@@ -1,18 +1,19 @@
 source :rubygems
 
-gem 'sinatra'
-gem 'sinatra-content-for', :require => 'sinatra/content_for'
+gem 'sinatra', '~> 1.3.3'
+gem 'sinatra-content-for', '~> 0.2', :require => 'sinatra/content_for'
 
-gem 'thin'
-gem 'rake'
-gem 'haml'
+gem 'thin', '~> 1.4.1'
+gem 'rake', '~> 0.9.2.2'
+gem 'haml', '~> 3.1.7'
 
-gem 'bson_ext'
-gem 'mongo_mapper'
+gem 'bson_ext', '~> 1.6.2'
+gem 'mongo_mapper', '~> 0.11.2'
 
 group :test do
-  gem 'capybara'
-  gem 'database_cleaner'
-  gem 'rack-test'
-  gem 'minitest'
+  gem 'capybara', '~> 1.1.2'
+  gem 'fabrication', '~> 1.2.0'
+  gem 'database_cleaner', '~> 0.6.7'
+  gem 'rack-test', '~> 0.6.1'
+  gem 'minitest', '~> 2.12.1'
 end
