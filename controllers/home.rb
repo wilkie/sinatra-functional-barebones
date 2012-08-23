@@ -1,5 +1,5 @@
 class Application
   get '/' do
-    "Hello"
+    haml :"home/index"
   end
 end
