@@ -1,0 +1,11 @@
+%h1
+  Users
+%a{:href => "/", :title => "Go Home", :alt => "Go Home"}
+  Go Home 
+|
+%a{:href => "/users/new", :title => "Create a User", :alt => "Create a User"}
+  Create a new user
+%ul
+  - @users.each do |u|
+    %li
+      = partial :"users/list", :locals => {:user => u}
