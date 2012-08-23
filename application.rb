@@ -1,9 +1,13 @@
-require 'sinatra'
-require 'mongo_mapper'
+# Require all of our dependencies
+require 'bundler'
+Bundler.require
 
 class Application < Sinatra::Base
   # Use HTML5
   set :haml, :format => :html5
+
+  # Helpers
+  helpers Sinatra::ContentFor
 end
 
 %w(config helpers controllers models).each do |dir|
