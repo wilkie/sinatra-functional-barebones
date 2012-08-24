@@ -13,6 +13,7 @@ gem 'mongo_mapper', '~> 0.11.2'
 # %%DELETE%% omniauth
 # %%DELETE%% less
 # %%DELETE%% login
+gem 'bcrypt-ruby', '~> 3.0.1', :require => 'bcrypt'
 
 group :test do
   gem 'capybara', '~> 1.1.2', :require => 'capybara/dsl'
