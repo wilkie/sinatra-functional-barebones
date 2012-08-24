@@ -5,8 +5,12 @@ class Application
     end
 
     def current_user
-      if session[:user_id]
-        @current_user ||= User.first(:id => session[:user_id])
+      if Application::REQUIRE_LOGIN
+        if session[:user_id]
+          @current_user ||= User.first(:id => session[:user_id])
+        end
+      else
+        @current_user = User.first || User.create(:name => "owner")
       end
     end
   end
