@@ -1,4 +1,7 @@
-class Application
+require 'bundler'
+Bundler.require
+
+class Application < Sinatra::Base
   configure :test do
     MongoMapper.database = "application_test"
   end
