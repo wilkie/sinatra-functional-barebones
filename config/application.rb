@@ -7,4 +7,8 @@ class Application < Sinatra::Base
   # %%DELETE%% omniauth
 
   # %%DELETE%% login
+  # Password Signup -----------------------------------------------------------
+
+  # Whether or not a password is required to be repeated to confirm
+  REQUIRE_PASSWORD_CONFIRMATION = true
 end
