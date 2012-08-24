@@ -15,5 +15,5 @@ group :test do
   gem 'fabrication', '~> 1.2.0'
   gem 'database_cleaner', '~> 0.6.7'
   gem 'rack-test', '~> 0.6.1'
-  gem 'minitest', '~> 2.12.1'
+  gem 'minitest', '~> 2.12.1', :require => 'minitest/autorun'
 end

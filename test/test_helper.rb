@@ -2,8 +2,6 @@ require_relative '../config/environment'
 
 Bundler.require(:test)
 
-require 'minitest/autorun'
-
 module TestHelper
   def setup
     DatabaseCleaner.strategy = :truncation
