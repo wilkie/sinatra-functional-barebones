@@ -1,0 +1,9 @@
+%h1
+  Edit user
+%form{:action => "/users/#{@user.id}/edit", :method => :post}
+  %label{:for => "name"} Name:
+  %input{:type => "text", :name => "name", :id => "name", :value => @user.name}
+  %br/
+  %textarea{:name => "bio", :id => "bio"}= @user.bio
+  %br/
+  %input{:type => "submit", :id => "submit", :value => "Update"}

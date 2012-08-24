@@ -3,5 +3,8 @@
 %p
   = @user.bio
 
+%a{:href => "/users/#{@user.id}/edit", :title => "Edit User", :alt => "Edit User"}
+  Edit
+|
 %a{:href => "/users", :title => "Back to Users", :alt => "Back to Users"}
   Back to Users
