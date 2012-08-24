@@ -11,9 +11,9 @@ gem 'bson_ext', '~> 1.6.2'
 gem 'mongo_mapper', '~> 0.11.2'
 
 group :test do
-  gem 'capybara', '~> 1.1.2'
+  gem 'capybara', '~> 1.1.2', :require => 'capybara/dsl'
   gem 'fabrication', '~> 1.2.0'
   gem 'database_cleaner', '~> 0.6.7'
-  gem 'rack-test', '~> 0.6.1'
+  gem 'rack-test', '~> 0.6.1', :require => 'rack/test'
   gem 'minitest', '~> 2.12.1', :require => 'minitest/autorun'
 end
