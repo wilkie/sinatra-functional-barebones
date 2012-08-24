@@ -4,4 +4,13 @@
     %title
       My Application
   %body
+    %div.topbar
+      - if logged_in?
+        Logged in as #{current_user.name}
+        |
+        %a{:href => "/logout", :title => "Logout", :alt => "Logout"}
+          Logout
+      - else
+        %a{:href => "/login", :title => "Login", :alt => "Login"}
+          Login
     = yield
