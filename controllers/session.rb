@@ -9,6 +9,18 @@ class Application
     haml :"session/login"
   end
 
+  post '/login' do
+    user = User.first(:name => params['name'])
+    if user.authenticated?(params['password'])
+      session[:user_id]    = user.id
+      session[:user_token] = nil
+      session[:provider]   = nil
+
+      redirect '/'
+    else
+    end
+  end
+
   get '/logout' do
     session[:user_id] = nil
     session[:user_token] = nil
