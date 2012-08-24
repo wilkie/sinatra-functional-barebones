@@ -6,7 +6,7 @@ class Application
   end
 
   post '/users' do
-    user = User.create(params)
+    user = User.create_from_params(params)
     redirect "/users/#{user.id}"
   end
 
