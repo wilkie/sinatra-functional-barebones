@@ -1,0 +1,8 @@
+%h1
+  Login Using one of the Following Methods:
+
+%ul
+  - @providers.each do |provider|
+    %li
+      %a{:href => provider[:url], :title => "Login with #{provider[:name]}", :alt => "Login with #{provider[:name]}"}
+        Login with #{provider[:name]}
