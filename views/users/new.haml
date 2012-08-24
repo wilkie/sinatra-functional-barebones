@@ -4,6 +4,13 @@
   %label{:for => "name"} Name:
   %input{:type => "text", :name => "name", :id => "name"}
   %br/
+  %label{:for => "name"} Password:
+  %input{:type => "password", :name => "password", :id => "password"}
+  %br/
+  - if Application::REQUIRE_PASSWORD_CONFIRMATION
+    %label{:for => "name"} Confirm Password:
+    %input{:type => "password", :name => "password-confirm", :id => "password-confirm"}
+    %br/
   %textarea{:name => "bio", :id => "bio"}
   %br/
   %input{:type => "submit", :id => "submit", :value => "Create"}
