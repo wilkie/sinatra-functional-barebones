@@ -1,5 +1,19 @@
 development:
   authorization:
+    # %%DELETE%% twitter
+
+    # %%DELETE%% github
+
+    # %%DELETE%% facebook
+
+    # %%DELETE%% steam
 
 production:
   authorization:
+    # %%DELETE%% twitter
+
+    # %%DELETE%% github
+
+    # %%DELETE%% facebook
+
+    # %%DELETE%% steam
