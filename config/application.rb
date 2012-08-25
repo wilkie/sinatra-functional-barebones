@@ -11,4 +11,7 @@ class Application < Sinatra::Base
 
   # Whether or not a password is required to be repeated to confirm
   REQUIRE_PASSWORD_CONFIRMATION = true
+
+  # How many bcrypt rounds to perform
+  BCRYPT_ROUNDS = 12
 end
