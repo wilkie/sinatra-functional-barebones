@@ -15,7 +15,7 @@ gem 'omniauth', '~> 1.1.0'
 
 # %%DELETE%% gem 'omniauth-twitter'
 
-# %%DELETE%% gem 'omniauth-github'
+gem 'omniauth-github', '~> 1.0.2'
 
 # %%DELETE%% gem 'omniauth-facebook'
 
