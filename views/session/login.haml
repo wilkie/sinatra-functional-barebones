@@ -1,6 +1,15 @@
 %h1
   Login Using one of the Following Methods:
 
+%form{:action => "/login", :method => :post}
+  %label{:for => "name"} Name:
+  %input{:type => "text", :name => "name", :id => "name"}
+  %br/
+  %label{:for => "password"} Password:
+  %input{:type => "password", :name => "password", :id => "password"}
+  %br/
+  %input{:type => "submit", :id => "submit", :value => "Signin"}
+
 %ul
   - @providers.each do |provider|
     %li
