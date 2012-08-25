@@ -4,7 +4,13 @@ class Application < Sinatra::Base
   # Whether or not there is a login functionality
   REQUIRE_LOGIN = true
 
-  # %%DELETE%% omniauth
+  # %%DELETE%% twitter
+
+  # %%DELETE%% github
+
+  # %%DELETE%% facebook
+
+  # %%DELETE%% steam
 
   # %%DELETE%% login
 end
