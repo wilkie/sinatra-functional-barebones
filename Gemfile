@@ -11,6 +11,16 @@ gem 'bson_ext', '~> 1.6.2'
 gem 'mongo_mapper', '~> 0.11.2'
 
 # %%DELETE%% omniauth
+gem 'omniauth', '~> 1.1.0'
+
+# %%DELETE%% gem 'omniauth-twitter'
+
+# %%DELETE%% gem 'omniauth-github'
+
+# %%DELETE%% gem 'omniauth-facebook'
+
+# %%DELETE%% gem 'omniauth-steam'
+
 # %%DELETE%% less
 # %%DELETE%% login
 # %%DELETE%% assets
