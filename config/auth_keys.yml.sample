@@ -2,7 +2,9 @@ development:
   authorization:
     # %%DELETE%% twitter
 
-    # %%DELETE%% github
+    github:
+      id: 1234
+      secret: 1234
 
     # %%DELETE%% facebook
 
@@ -12,7 +14,9 @@ production:
   authorization:
     # %%DELETE%% twitter
 
-    # %%DELETE%% github
+    github:
+      id: 1234
+      secret: 1234
 
     # %%DELETE%% facebook
 
