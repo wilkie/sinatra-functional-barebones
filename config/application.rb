@@ -7,6 +7,11 @@ class Application < Sinatra::Base
   # %%DELETE%% twitter
 
   # %%DELETE%% github
+  # GitHub --------------------------------------------------------------------
+
+  # Whether or not any interaction with twitter requires an authorization per
+  #  session, or, when off, oauth tokens are stored.
+  ALWAYS_REQUIRE_GITHUB_AUTH = true
 
   # %%DELETE%% facebook
 
