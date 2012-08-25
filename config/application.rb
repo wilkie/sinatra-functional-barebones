@@ -3,4 +3,8 @@ class Application < Sinatra::Base
   
   # Whether or not there is a login functionality
   REQUIRE_LOGIN = false
+
+  # %%DELETE%% omniauth
+
+  # %%DELETE%% login
 end
