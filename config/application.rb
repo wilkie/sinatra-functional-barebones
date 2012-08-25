@@ -11,6 +11,9 @@ class Application < Sinatra::Base
   #  session, or, when off, oauth tokens are stored.
   ALWAYS_REQUIRE_TWITTER_AUTH = true
 
+  # Whether or not one can create a new user with an authorization.
+  ALLOW_TWITTER_SIGNUP = true
+
   # %%DELETE%% github
 
   # %%DELETE%% facebook
