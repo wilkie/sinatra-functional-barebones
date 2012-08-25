@@ -10,7 +10,7 @@ class User
 
   # %%DELETE%% twitter
 
-  # %%DELETE%% github
+  one :github_info
 
   # %%DELETE%% facebook
 
