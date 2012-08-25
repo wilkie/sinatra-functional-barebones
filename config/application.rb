@@ -5,6 +5,11 @@ class Application < Sinatra::Base
   REQUIRE_LOGIN = false
 
   # %%DELETE%% twitter
+  # Twitter -------------------------------------------------------------------
+
+  # Whether or not any interaction with twitter requires an authorization per
+  #  session, or, when off, oauth tokens are stored.
+  ALWAYS_REQUIRE_TWITTER_AUTH = true
 
   # %%DELETE%% github
 
