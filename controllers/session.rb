@@ -2,7 +2,9 @@ class Application
   get '/login' do
     @providers = []
     ENV['authorization_providers'].split.each do |provider|
-      @providers << {:url => "/auth/#{provider}", :name => provider}
+      if has_feature? :"login_#{provider.downcase}"
+        @providers << {:url => "/auth/#{provider}", :name => provider}
+      end
     end
     haml :"session/login"
   end
