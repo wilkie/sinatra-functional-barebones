@@ -8,7 +8,7 @@ class User
 
   timestamps!
 
-  # %%DELETE%% twitter
+  one :twitter_info
 
   # %%DELETE%% github
 
