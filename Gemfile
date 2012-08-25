@@ -13,7 +13,8 @@ gem 'mongo_mapper', '~> 0.11.2'
 # %%DELETE%% omniauth
 gem 'omniauth', '~> 1.1.0'
 
-# %%DELETE%% gem 'omniauth-twitter'
+gem 'omniauth-twitter', '~> 0.0.12'
+gem 'twitter', '~> 3.5.0'
 
 # %%DELETE%% gem 'omniauth-github'
 
