@@ -13,6 +13,9 @@ class Application < Sinatra::Base
   #  session, or, when off, oauth tokens are stored.
   ALWAYS_REQUIRE_GITHUB_AUTH = true
 
+  # Whether or not one can create a new user with an authorization.
+  ALLOW_GITHUB_SIGNUP = true
+
   # %%DELETE%% facebook
 
   # %%DELETE%% steam
