@@ -11,6 +11,21 @@ class Application
       github = GithubInfo.create_with_omniauth(auth)
     end
 
+    unless github.user
+      if Application::ALLOW_GITHUB_SIGNUP
+        github.user = User.create(:name => github.login,
+                                  :bio  => github.bio,
+                                  :github_info => github)
+        github.save
+      end
+    end
+
+    unless logged_in?
+      session[:user_id]    = github.user.id
+      session[:user_token] = auth['credentials']['token']
+      session[:provider]   = :github
+    end
+
     session[:github_token] = auth['credentials']['token']
 
     redirect '/'
