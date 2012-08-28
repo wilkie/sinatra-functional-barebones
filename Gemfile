@@ -14,6 +14,7 @@ gem 'mongo_mapper', '~> 0.11.2'
 # %%DELETE%% less
 # %%DELETE%% login
 # %%DELETE%% assets
+gem 'sinatra-assetpack', :require => 'sinatra/assetpack'
 
 group :test do
   gem 'capybara', '~> 1.1.2', :require => 'capybara/dsl'
