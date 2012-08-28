@@ -10,6 +10,10 @@ gem 'haml', '~> 3.1.7'
 gem 'bson_ext', '~> 1.6.2'
 gem 'mongo_mapper', '~> 0.11.2'
 
+# %%DELETE%% omniauth
+# %%DELETE%% less
+# %%DELETE%% login
+
 group :test do
   gem 'capybara', '~> 1.1.2', :require => 'capybara/dsl'
   gem 'fabrication', '~> 1.2.0'
