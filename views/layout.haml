@@ -3,5 +3,8 @@
   %head
     %title
       My Application
+    %link{:href=>"/stylesheets/bootstrap.min.css", :rel=>"stylesheet", :type=>"text/css"}
   %body
     = yield
+    
+    %script{:src=>"/javascripts/bootstrap.min.js"}
