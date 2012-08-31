@@ -1,7 +1,7 @@
 class GithubInfo
   include MongoMapper::Document
 
-  key :uid,          Integer, :unique => true
+  key :uid,          Integer, :unique => true, :required => true
 
   key :login,        String
   key :bio,          String
