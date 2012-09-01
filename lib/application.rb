@@ -10,6 +10,12 @@ class Application < Sinatra::Base
   # Helpers
   helpers Sinatra::ContentFor
 
+  helpers do
+    def has_feature?(feature)
+      Application::Features.constants.include? "#{feature}".upcase.to_sym
+    end
+  end
+
   def self.load_tasks
     Dir[File.join(File.dirname(__FILE__), "tasks", '*.rb')].each do |file|
       require file
