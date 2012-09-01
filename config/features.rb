@@ -11,6 +11,7 @@ class Application < Sinatra::Base
     # %%DELETE%% login-steam
     # %%DELETE%% omniauth-github
     # %%DELETE%% omniauth-twitter
+    AUTHORIZATION_TWITTER = true
     # %%DELETE%% omniauth-facebook
     # %%DELETE%% omniauth-steam
     # %%DELETE%% views-bootstrap
