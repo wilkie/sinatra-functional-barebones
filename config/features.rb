@@ -8,6 +8,7 @@ class Application < Sinatra::Base
     AUTHORIZATION = true
     # %%DELETE%% login-github
     # %%DELETE%% login-twitter
+    LOGIN_TWITTER = true
     # %%DELETE%% login-facebook
     # %%DELETE%% login-steam
     # %%DELETE%% omniauth-github
